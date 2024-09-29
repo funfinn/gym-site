@@ -22,9 +22,35 @@
 
 .home-list {
     text-align: center;
-    color: darkgoldenrod;
 }
+/*
 .my-ul {
     display: inline-block;
     text-align: left;
+    text-decoration: none;
   }
+
+.my-ul:link {
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+.my-ul:hover {
+    color: blue;
+    text-decoration: none;
+}
+*/
+
+.my-ul:link, .my-ul:visited {
+    background-color: rgba(255, 255, 255, 0.549);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .my-ul:hover, .my-ul:active {
+    background-color: rgba(255, 255, 255, 0.282);
+  }
+  
