@@ -16,41 +16,48 @@
     box-sizing: border-box;
 }
 
-.home-text {
+.home-text, .home-list {
     text-align: center;
+}
+
+ul {
+    list-style: none;
 }
 
 .home-list {
-    text-align: center;
-}
-/*
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}  
+
 .my-ul {
-    display: inline-block;
-    text-align: left;
-    text-decoration: none;
-  }
-
-.my-ul:link {
-    color: darkgoldenrod;
-    text-decoration: none;
+    justify-self: space-evenly;
+    align-self: center;
+    display: flex;
+    gap: 16px;
 }
 
-.my-ul:hover {
-    color: blue;
-    text-decoration: none;
+a:link, a:active {
+    color:rgb(38, 86, 86)
 }
-*/
 
-.my-ul:link, .my-ul:visited {
-    background-color: rgba(255, 255, 255, 0.549);
-    color: white;
-    padding: 14px 25px;
+a:visited, a:hover {
+    color: rgb(1, 101, 147);
+}
+
+.images{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    flex: 1 1 auto;
+    border-radius: 8px;
+    margin-top: 16px;
+    gap: 16px;
+    filter: saturate(50%);
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  .my-ul:hover, .my-ul:active {
-    background-color: rgba(255, 255, 255, 0.282);
-  }
-  
+}
+
+.image-one,.image-two,.image-three p {
+    align-self: center;
+}
